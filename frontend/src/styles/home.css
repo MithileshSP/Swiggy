@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body:not(.homepage) {
+    background-color: rgb(255, 82, 0);
+}
+.home-container {
+    
+    font-family: 'Poppins', sans-serif;
+    position:relative;
+    color: white;
+    padding: 20px;
+    display:contents;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    gap: 400px;
+    padding: 30px;
+}
+
+.logo img {
+    height: 50px;
+    position:relative;
+    left: 20px;
+    padding: 20px;
+}
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-buttons a,
+.app-btn,
+.sign-in {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+
+.app-btn {
+    padding: 15px;
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+    gap: 10px;
+}
+#app-icon{
+    
+    font-size: 15px;
+}
+.sign-in {
+    background: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 130px;
+    margin-right: 150px;
+}
+#rightpic, #leftpic {
+    position: absolute;
+    height: 500px;
+    max-width: 100%;
+}
+
+#rightpic {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#leftpic {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text {
+    margin-top: 180px;
+    font-family:  'Poppins', sans-serif;
+    text-align:center;
+    font-size:45px;
+    font-weight:600;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.search-section input {
+    font-family:  'Poppins', sans-serif;
+    font-weight:600;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+.services {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+    cursor: pointer;
+}
+
+.service-card img {
+    width: 600px;
+    height: 350px;
+    border-radius: 10px;
+}
+.search-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .input-box {
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .arrow {
+    color:rgba(0, 0, 0, 0.805) ;
+    font-size: 25px;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 80px;
+    width:700px;
+    left: 0;
+    height: auto;
+    background: white;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  #drop-text{
+    font-family: Likely Inter, Arial, or sans-serif;
+    font-size: 15px;
+    color:rgb(255, 82, 0);
+  }
+  #drop-icon{
+    margin-right: 10px;
+    font-size: 20px;
+    color:rgb(255, 82, 0);
+  }
+  .dropdown-menu div {
+
+    cursor: pointer;
+    text-align: left;
+  }
+  #icon{
+    font-size: 25px;
+    margin-right: 20px;
+    color:  rgb(255, 82, 0);
+  }
+  #input-text{
+    font-size: 15px;
+    font-family:  'Poppins', sans-serif;
+    font-weight:600;
+    justify-content: space-between;
+    color: #808080;
+  }
+    
+  .search-button {
+    height: 62px;
+    width: 425px;
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: left;
+  }
+  #search-text{
+    font-size: 15px;
+    font-family:  'Poppins', sans-serif;
+    font-weight:600;
+    justify-content: space-between;
+    color: #808080;
+    
+  }
+  #search-icon{
+    font-size: 20px;
+    color:#808080;
+    margin-left: 90px;
+  }

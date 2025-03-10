@@ -1,0 +1,73 @@
+/* Admin Page Styles */
+.admin-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 120px;
+    background-color: #333;
+  }
+  
+  .admin-container {
+    max-width: 90%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    max-height: 76%;
+    overflow-y: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styles */
+  .table-container {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  thead {
+    background-color: #333;
+    color: white;
+  }
+  
+  thead th {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
