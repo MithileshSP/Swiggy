@@ -81,10 +81,7 @@ const response = await fetch(`${import.meta.env.VITE_API_URL}/update-${type}/${i
       const endpoint = type === "menu" ? "delete-menu" : "delete-detail";
       console.log(`Deleting ${type} with ID: ${id}`);
   
-const response = await fetch(`${import.meta.env.VITE_API_URL}/${endpoint}/${id}`, {
-  method: "DELETE",
-});
-
+      const response = await fetch(`http://localhost:7000/${endpoint}/${id}`, { method: "DELETE" });
       const result = await response.json();
   
       if (!response.ok) {
@@ -111,18 +108,17 @@ const response = await fetch(`${import.meta.env.VITE_API_URL}/${endpoint}/${id}`
     }
 
     try {
-const response = await fetch(`${import.meta.env.VITE_API_URL}/add-menu`, {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    id: newId,
-    menu: newMenu,
-    path: newPath,
-  }),
-});
-
+        const response = await fetch("http://localhost:7000/add-menu", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                id: newId,
+                menu: newMenu,
+                path: newPath,
+            }),
+        });
 
         const data = await response.json();
 

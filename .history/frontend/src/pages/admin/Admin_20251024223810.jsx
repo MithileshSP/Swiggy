@@ -111,18 +111,17 @@ const response = await fetch(`${import.meta.env.VITE_API_URL}/${endpoint}/${id}`
     }
 
     try {
-const response = await fetch(`${import.meta.env.VITE_API_URL}/add-menu`, {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    id: newId,
-    menu: newMenu,
-    path: newPath,
-  }),
-});
-
+        const response = await fetch("http://localhost:7000/add-menu", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                id: newId,
+                menu: newMenu,
+                path: newPath,
+            }),
+        });
 
         const data = await response.json();
 
