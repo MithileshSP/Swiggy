@@ -23,11 +23,7 @@ export default function Cart() {
 
     const increaseQuantity = async (menu) => {
         try {
-const response = await fetch(`${import.meta.env.VITE_API_URL}/update-quantity/${menu}`, {
-  method: "PUT",
-  headers: { "Content-Type": "application/json" },
-});
-
+C
             if (!response.ok) throw new Error("Failed to update quantity");
 
             fetchCartItems();
