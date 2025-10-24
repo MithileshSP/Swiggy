@@ -15,8 +15,7 @@ export default function Admin() {
   
   const fetchMenu = async () => {
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/menu`);
-
+      const response = await fetch("http://localhost:7000/menu");
       const data = await response.json();
       setMenu(data);
     } catch (error) {

@@ -14,6 +14,7 @@ export default function Cart() {
     const fetchCartItems = async () => {
         try {
             const response = await fetch(`${import.meta.env.VITE_API_URL}/get-cart`);
+
             const data = await response.json();
             setCartItems(data);
         } catch (error) {

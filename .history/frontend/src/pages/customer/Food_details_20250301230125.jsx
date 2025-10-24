@@ -13,7 +13,7 @@ export default function Food_details() {
         const fetchFood = async () => {
             try {
                 console.log(`Fetching food details for: ${menu}`);
-                const response = await fetch(`${import.meta.env.VITE_API_URL}/get-food/${encodeURIComponent(menu)}`);
+                const response = await fetch(`http://localhost:7000/get-food/${encodeURIComponent(menu)}`);
 
                 if (!response.ok) {
                     throw new Error(`Server responded with status: ${response.status}`);

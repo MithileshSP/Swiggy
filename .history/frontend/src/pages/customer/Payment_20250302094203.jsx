@@ -12,10 +12,9 @@ export default function Payment() {
     const handlePayment = async () => {
         try {
             // Call API to clear cart from database
-const response = await fetch(`${import.meta.env.VITE_API_URL}/clear-cart`, {
-  method: "DELETE",
-});
-
+            const response = await fetch("http://localhost:7000/clear-cart", {
+                method: "DELETE",
+            });
     
             if (!response.ok) throw new Error("Failed to clear cart");
     

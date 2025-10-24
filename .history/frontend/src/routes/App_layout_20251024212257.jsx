@@ -2,7 +2,7 @@ import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Login from "../components/login/Login";
 import Customer_home from "../pages/customer/Customer_home";
-import Admin from "../pages/admin/Admin";
+import Admin from "../pages/admin/4
 import Home from "../pages/Home";
 import Cart from "../pages/customer/Cart";
 import Help from "../pages/customer/Help";

@@ -10,7 +10,7 @@ export default function Customer_home() {
   useEffect(() => {
     const fetchFoods = async () => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/get-data`);
+        const response = await fetch("http://localhost:7000/get-data");
         const data = await response.json();
         setFoods(data);
       } catch (error) {
