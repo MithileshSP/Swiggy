@@ -54,11 +54,10 @@ export default function Cart() {
 
     const deleteItem = async (menu) => {
         try {
-const response = await fetch(`${import.meta.env.VITE_API_URL}/delete-from-cart/${encodeURIComponent(menu)}`, {
-    method: "DELETE",
-    headers: { "Content-Type": "application/json" },
-});
-
+            const response = await fetch(`http://localhost:7000/delete-from-cart/${encodeURIComponent(menu)}`, {
+                method: "DELETE",
+                headers: { "Content-Type": "application/json" },
+            });
 
             const result = await response.json();
             if (!response.ok) {
